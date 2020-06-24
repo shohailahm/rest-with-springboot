@@ -11,4 +11,4 @@ deploy:
   on:
     branch: master
 notification:
-  email: false
+  email: true
