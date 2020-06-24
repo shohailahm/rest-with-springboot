@@ -6,8 +6,8 @@ before_deploy:
   - echo "${DOCKER_PASSWORD}" | docker login --username "${DOCKER_USERNAME}" --password-stdin
 deploy:
   provider: script
-  script: docker push shohail/rest_springboot
-    docker push shohail/mysql-with-springboot
+  script: docker push shohail/rest_springboot;
+    docker push shohail/mysql-with-springboot;
   on:
     branch: master
 notification:
